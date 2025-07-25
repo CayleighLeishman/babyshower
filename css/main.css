@@ -6,7 +6,7 @@
     --accent: #f4e2d8;
 	
 	--navy: #1a1a40;
-    --pink: #ff8fb1;
+    --pink: #E91E63;
     --white: #ffffff;
     --soft-pink: #ffe9f1;
 
@@ -16,7 +16,6 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Inter', sans-serif;
-
 }
 
 *,
@@ -38,6 +37,10 @@ img {
     width: 100%;
     height: auto;
     object-fit: cover;
+  
+}
+.hero img{
+      opacity: 0.7; 
 }
 
 nav {
@@ -132,8 +135,6 @@ nav a:hover {
 	background-color: var(--soft-gold);
 }
 
-
-
 .detail h4 {
     color: var(--gold);
     margin-top: 20px;
@@ -163,6 +164,11 @@ nav a:hover {
     font-weight: 400;
 }
 
+.btn-large.pink:hover {
+    background-color: var(--pink) !important;
+    color: #372d2f !important;
+} 
+
 .cta {
     margin-top: 30px;
 }
@@ -179,6 +185,18 @@ nav a:hover {
 
 .cta a:hover {
     background-color: #e7d591;
+}
+/* footer stuff */
+
+.footer{
+    background-color: var(--pink);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p{
+    font: 1em sans-serif;
 }
 
 /* Responsive Styles */
