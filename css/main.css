@@ -43,24 +43,6 @@ img {
       opacity: 0.7; 
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    background: var(--white);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    z-index: 999;
-}
-
-nav a {
-    color: var(--gold);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-nav a:hover {
-	color: var(--text-dark);
-}
 
 .intro {
     margin-top: 100px; /* Add more space so header is pushed below nav */
@@ -76,6 +58,43 @@ nav a:hover {
     letter-spacing: 6px;
 }
 
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero img.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content h5,
+.hero-content h6 {
+  font-size: 1.3rem;
+}
 
 .header-align h1,
 .header-align h5,
@@ -107,8 +126,6 @@ nav a:hover {
     transform: scale(1) translateY(0);
   }
 }
-
-
 
 .hero-content {
     position: absolute;
@@ -201,6 +218,8 @@ footer p{
 
 /* Responsive Styles */
 @media (max-width: 600px) {
+
+
     .intro h1 {
         font-size: 2rem;
     }
@@ -217,4 +236,25 @@ footer p{
         font-size: 0.9rem;
         padding: 12px 20px;
     }
+        .hero-content h1{
+        font-size: 2rem
+        
+    }
+    
+ .hero {
+    height: 80vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h6,
+  .hero-content h5 {
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    padding: 10px;
+  }
 }

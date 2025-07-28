@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="css/main.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"> <!-- for the scroll effect -->
-	
+	<link rel="stylesheet" href="css/nav.css">
+
+
 	<!-- JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	 <!-- this is supposed to give you the AOS Scroll animation -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+	<!-- for the navigation -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+	<script src="js/nav.js" defer></script>
 
 	<!-- extra links -->
 
@@ -19,58 +25,70 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
 
-	<!-- favicon -->
-	 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-</head>
+		<!-- favicon -->
+		 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	</head>
 <body>
+
+									<!-- Navigation -->
 	<nav>
-		<div class="nav-wrapper pink">
-				
-			<ul class="grey darken-4" id="mobile-demo">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#babyshower">BabyShower<i class="material-icons right">cake</i></a></li>
-				<li><a href="#rsvp">RSVP<i class="material-icons right">send</i></a></li>
-				<li><a href="#wishlist">Wishlist<i class="material-icons right">card_giftcard</i></a></li>
-			</ul>
-		</div>
+	  <div class="nav-wrapper pink">
+	    <a href="#home" class="brand-logo" style="padding-left: 15px;">Baby Shower</a>
+	    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+	      <i class="material-icons">menu</i>
+	    </a>
+	    <ul class="right hide-on-med-and-down">
+	      <li><a href="#home">Home</a></li>
+	      <li><a href="#babyshower">BabyShower<i class="material-icons right">cake</i></a></li>
+	      <li><a href="#rsvp">RSVP<i class="material-icons right">send</i></a></li>
+	      <li><a href="#wishlist">Wishlist<i class="material-icons right">card_giftcard</i></a></li>
+	    </ul>
+ 		 </div>
 	</nav>
 
-<section class="hero" id="home">
-  <img src="img/baby-girl.jpg" alt="Teddy Bear with Pink bow and Pink heart Pillow" class="hero-image">
-  <div class="hero-content">
-    <h1>Alexis And Dennis</h1>
-    <h6>Are Expecting!</h6>
-    <h5>January 2026!</h5>
-  </div>
-</section>
+	<ul class="sidenav" id="mobile-demo">
+	  <li><a href="#home">Home</a></li>
+	  <li><a href="#babyshower">BabyShower<i class="material-icons right">cake</i></a></li>
+	  <li><a href="#rsvp">RSVP<i class="material-icons right">send</i></a></li>
+	  <li><a href="#wishlist">Wishlist<i class="material-icons right">card_giftcard</i></a></li>
+	</ul>
 
-<section>
+	<section class="hero" id="home">
+	  <img src="img/baby-girl.jpg" alt="Teddy Bear with Pink bow and Pink heart Pillow" class="hero-image">
+	  <div class="hero-content">
+	    <h1>Alexis And Dennis</h1>
+	    <h6>Are Expecting!</h6>
+	    <h5>January 2026!</h5>
+	  </div>
+	</section>
 
-	<section class="info" id="babyshower">
-		
-		<div class="row container">
-			<div class="col s12 center-align">
-				<div class="detail">
-					<h4>When</h4>
-					<p>Baby Shower - 1:00pm</p>
-					<p>August 30th </p>
-					
-				</div>
-			</div>	
-			
-			<div class="col s12 center-align">
-				<div class="detail">
-					<h4>Where</h4>
-					<p>Pocatello, Idaho</p>
-					<p>[address loading...]</p>
+	<section>
+
+		<section class="info" id="babyshower">
+
+			<div class="row container">
+				<div class="col s12 center-align">
+					<div class="detail">
+						<h4>When</h4>
+						<p>Baby Shower - 1:00pm</p>
+						<p>August 30th </p>
+
+					</div>
+				</div>	
+
+				<div class="col s12 center-align">
+					<div class="detail">
+						<h4>Where</h4>
+						<p>Pocatello, Idaho</p>
+						<p>[address loading...]</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</section>
-</section>
 
 <section class="header-align">
 
@@ -99,7 +117,7 @@
 	<section class="cl s12 center-align wishlist" id="wishlist">
 		<h1>Wishlist</h1>
 
-	  <p>No pressure. But if gifting’s your vibe, here’s a list of baby things we’d totally appreciate.</p>
+	  <p>For those that want the Wishlist</p>
 
 		<a href="https://www.amazon.com/hz/wishlist/ls/3KX1Z2Q0V4W5H?ref_=wl_share" class="btn-large pink waves-effect waves-light">
 			Amazon Wishlist
