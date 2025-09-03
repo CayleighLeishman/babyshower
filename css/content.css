@@ -1,0 +1,116 @@
+
+.intro {
+    margin-top: 100px; /* Add more space so header is pushed below nav */
+    text-align: center;
+    color: var(--gold);
+    position: relative;
+    z-index: 1;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 6px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content h5,
+.hero-content h6 {
+  font-size: 1.3rem;
+}
+
+.header-align h1,
+.header-align h5,
+.header-align h6 {
+  opacity: 0;
+  animation: fadeInCenter 1.2s ease-out forwards;
+}
+
+.header-align h1 {
+  animation-delay: 0.2s;
+}
+
+.header-align h6 {
+  animation-delay: 0.5s;
+}
+
+.header-align h5 {
+  animation-delay: 0.8s;
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5); /* Improves readability */
+}
+
+
+.info {
+    padding: 80px 20px;
+    background: var(--soft-pink);
+    text-align: center;
+}
+
+.center-align {
+    position: relative;
+
+	background-color: var(--soft-gold);
+}
+
+.detail h4 {
+    color: var(--gold);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.detail p {
+    color: var(--text-dark);
+    font-weight: 300;
+}
+
+.rsvp {
+    padding: 100px 20px;
+    background-color: var(--transparent-gold);
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.rsvp h1 {
+    color: var(--gold);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.rsvp h5 {
+    color: var(--text-dark);
+    font-weight: 400;
+}
+
